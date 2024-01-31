@@ -9,12 +9,13 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 ## [0.9.1] - 2024-01-31
 
 ### Deprecated
-- Not enabled in Windows 7 despite lowering VSCode engine and @types/vscode to 1.55.0.
+- Extension not enabled in Windows 7 despite lowering VSCode engine and @types/vscode to 1.55.0.
 
 ### Added
 - Windows 10 quirks in Read.me.
 - Empty lines in Change lod for compatibility with older mark down parsers.
-
+- New icon.
+- Videos on YouTube.
 
 ## [0.9.0] - 2024-01-31
 
