@@ -5,6 +5,13 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [0.9.2] - 2024-01-31
+
+- Bundling and packing.
+
+### Fixed
+- Same colors in GUI for all selections except enum and hex.
+
 
 ## [0.9.1] - 2024-01-31
 
@@ -12,8 +19,8 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 - Extension not enabled in Windows 7 despite lowering VSCode engine and @types/vscode to 1.55.0.
 
 ### Added
-- Windows 10 quirks in Read.me.
-- Empty lines in Change lod for compatibility with older mark down parsers.
+- Windows 10 quirks documented in Read.me.
+- Empty lines in Change log for compatibility with older markdown parsers.
 - New icon.
 - Videos on YouTube.
 
