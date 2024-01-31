@@ -52,6 +52,10 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 
 **That's it!**  
 
+Let's see that in motion:
+
+![howitworks](/media/basic02c.gif)
+
 ## Example
 
 - If we want this `li`:  
@@ -300,8 +304,9 @@ There are two variants of enums but since they can be interchangeably used only 
 
 ## GUI
 
-- Graphical user interface for Advanced increments provides user with interactive incrementing, detailed picture of selections, enums, result, changing line text with active settings, multi line strings, direct insert of enums in line text, retrieving line text, changing variant of enums, exporting results, exporting API calls and more to come.
-- Lets se how it looks on previous example with colors.
+Graphical user interface for Advanced increments provides user with interactive incrementing, detailed picture of selections, enums, result, changing line text with active settings, multi line strings, direct insert of enums in line text, retrieving line text, changing variant of enums, exporting results, exporting API calls and more to come.  
+
+Lets se how it looks on previous example with colors.
 
   1. Advanced increment tab  
 
@@ -340,6 +345,8 @@ There are two variants of enums but since they can be interchangeably used only 
       + JSON array.
 
   ![howitworks](/media/gui3.png)
+
+  ![howitworks](/media/gui-gif1.gif)
 
 ## Continuous and ranged enum variants
 
