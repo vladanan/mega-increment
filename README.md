@@ -346,6 +346,8 @@ Lets se how it looks on previous example with colors.
 
   ![howitworks](/media/gui3.png)
 
+Let's see that in motion:
+
   ![howitworks](/media/gui-gif1.gif)
 
 ## Continuous and ranged enum variants
