@@ -1,18 +1,18 @@
 # mega-increment README
 
-- Mega-increment extension is intended to ease parallel independent incrementations and decrementations in various strings. It can be used in writing code for lists, enums, arrays, tests, html and xml tags, csv files, data base examples and tests, date-time iterations, hexadecimal and binary register allocations and many other uses.
+Mega-increment extension is intended to ease parallel independent incrementations and decrementations in various strings. It can be used in writing code for lists, enums, arrays, tests, html and xml tags, csv files, data base examples and tests, date-time iterations, hexadecimal and binary register allocations and many other uses.
 
-- Basic functionality is available in the **editor** tabs and advanced options are implemented in a separate **GUI** tab.
+Basic functionality is available in the **editor** tabs and advanced options are implemented in a separate **GUI** tab.
 
 ## Editor
 
-- There are four simple commands which are used in editor:
-  + when some part of line is selected user can **add** it for incrementation (and then select type and stepping)
-  + start **incrementing** by adding lines below the line where the cursor is
-  + **delete** all selected parts for incrementation
-  + start **Advanced GUI** mode
+There are four simple commands which are used in editor:
+  - when some part of line is selected user can **add** it for incrementation (and then select type and stepping)
+  - start **incrementing** by adding lines below the line where the cursor is
+  - **delete** all selected parts for incrementation
+  - start **Advanced GUI** mode
 
-- All commands are available in VSCode standard Command Palette (Linux/Windows: Ctrl+Shift+P / F1, Mac: ⇧⌘P / F1).  
+All commands are available in VSCode standard Command Palette (Linux/Windows: Ctrl+Shift+P / F1, Mac: ⇧⌘P / F1).  
 ***Tip:*** *By typing '**mega**' in Command Palette you get all of them quickly*
 
 | Command Palette name | Default shortcut* | Mac shortcut* | Shortcuts other devs use |
@@ -54,11 +54,11 @@
 
 ## Example
 
-- If we want this list part:  
+- If we want this `li`:  
 `<li style="background-color: rgb(200, 69, 98); width: 120px;">Increment test</li>`  
   <li style="background-color: rgb(200, 69, 98); width: 120px;">Increment test</li>
 - to be repeatedly changed in a way to gradually **decrease red** color and at the same time to **increase width** of element.
-- For this we would:
+- For that we would:
   + **select** `200`, **add** it for increment by Ctrl+Alt+8, choose **number** type, input **stepping** -20
   + then **select** `120`, **add** it to increment, choose **number** type, input **stepping** 20
   + if we then **increment** that for eight times by Ctrl+Alt+U we should get this:  
@@ -308,33 +308,33 @@ There are two variants of enums but since they can be interchangeably used only 
   **Line text section:**
 
   2. Number of times the line text is incremented
-  3) Line text is automatically retrieved from editor
-  4) Use Alt+8 to get focus on line text  
+  3. Line text is automatically retrieved from editor
+  4. Use Alt+8 to get focus on line text  
   *More information about Alt+8 and other web accesskeys in: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey*
-  5) Line text can be retrieved back if changed or lost  
+  5. Line text can be retrieved back if changed or lost  
 
   **Types section, buttons enable selecting type for selected text, available buttons depend on what kind of text is selected:**
 
-  6) **Basic** forms of incrementing: simple which treats selected text as sweet of individual characters and number for integers and floating point numbers
-  7) **JS** group for enums/lists, date and time
-  8) **C** group for hex, binary, random and crypto types  
+  6. **Basic** forms of incrementing: simple which treats selected text as sweet of individual characters and number for integers and floating point numbers
+  7. **JS** group for enums/lists, date and time
+  8. **C** group for hex, binary, random and crypto types  
 
   **Enums section:**
 
-  9) Table of available enums in mega increment settings, from this table new enums can be inserted in line text
-  10) Button for inserting enums from table (alongside those maybe already present in text line)  
+  9. Table of available enums in mega increment settings, from this table new enums can be inserted in line text
+  10. Button for inserting enums from table (alongside those maybe already present in text line)  
 
   **Selections section:**
 
-  11) Table with details about selections
-  12) Buttons for:
+  11. Table with details about selections
+  12. Buttons for:
         + **deleting** all selections (shortcut Alt+0)
         + export of active setup as curl API call (*Be careful when using `'` and `"` in curl API calls from (Linux/Mac) shell(s). Because of shell performing string concatenation on the command line and JSON format which depends on `""` you probably must: escape each `'` with `'\''` for shell concatenation, escape each `"` with `\"` for JSON parsing. In some programming languages practical implementation for escaping like this might require additional escaping of backslash `\` character so it might look as this: `'\\''` and `\\"`.*)
 
   **Result section:**  
 
-  13) Area for interactive display of incrementing result
-  14) Buttons for exporting the result to:
+  13. Area for interactive display of incrementing result
+  14. Buttons for exporting the result to:
       + editor (when back in editor go to the end of line and hit Ctrl+Alt+U to retrieve result from GIU)
       + clipboard and
       + JSON array.
@@ -354,19 +354,19 @@ There are two variants of enums but since they can be interchangeably used only 
 
 
 ## Public API
-- This project includes public API with same functions as extension. You can see the MACf Documentation here in VSCode in extension profile or at: https://vezbamo.vercel.app/api/mi/pad
+This project includes public API with same functions as extension. You can see the MACf Documentation here in VSCode in extension profile or at: https://vezbamo.vercel.app/api/mi/pad
 
 
 ## Settings
 
-- For Mega Increment settings you go to VSCode Settings and then find Mega Increment section or just type '**mega**' in search field and you get to those settings quickly.
+For Mega Increment settings you go to VSCode Settings and then find Mega Increment section or just type '**mega**' in search field and you get to those settings quickly.
 - *Depending od OS especially on some Linux systems VSCode might have to be restarted for some settings to take effect.*
 
-- This extension contributes the following settings in VSCode:
-  + `Mega-increment: Default Stepping`: Choose default stepping for editor and GUI.
-  + `Mega-increment: Default Enum Variant`: Choose default incrementation variant for enums.
+This extension contributes the following settings in VSCode:
+- `Mega-increment: Default Stepping`: Choose default stepping for editor and GUI.
+- `Mega-increment: Default Enum Variant`: Choose default incrementation variant for enums.
     * continuous: Treats enum list as continuous i.e. infinite and increments items in linear fashion.
-    * ranged:Enum list is contained in its range so increments beyond list length are trimmed.
+    * ranged: Enum list is contained in its range so increments beyond list length are trimmed.
 - `Mega-increment: Key Value Pairs`: Create custom key value pair lists for frequently used enums and lists.  
 
 
@@ -376,15 +376,17 @@ There are two variants of enums but since they can be interchangeably used only 
 ![nodonations](/media/nodonations.png)
 
 ### Why would this extension be needed if those same things can be programmed at need with loops etc.?
-- I developed this extension from my personal need so I can vouch for the following reasons:
-  + You will lose more time to program any of the custom increments than to produce it via extension.
-  + Yes, programmed snippets can be reprogrammed and extended but that is also true for snippets from extension, except for highly customized and isolated cases.
-  + Snippet from extension is easier to read and maintain.
-  + Snippet from extension is faster to produce and use for testing:
-    * If code works well it can be later optimized 
-    * If you find out that you don't need such code then at least you didn't spend a lot of time developing custom code.
-- Since I offer a public API outside of extension anyone from any app can use extension power instead of writing custom code for most standard increments and decrements.
-- Can this be done using AI? Yes but it would usually last longer and with uncertain results.
+I developed this extension from my personal need so I can vouch for the following reasons:
+  - You will lose more time to program any of the custom increments than to produce it via extension.
+  - Yes, programmed snippets can be reprogrammed and extended but that is also true for snippets from extension, except for highly customized and isolated cases.
+  - Snippet from extension is easier to read and maintain.
+  - Snippet from extension is faster to produce and use for testing:
+    + If code works well it can be later optimized 
+    + If you find out that you don't need such code then at least you didn't spend a lot of time developing custom code.
+
+Since I offer a public API outside of extension anyone from any app can use extension power instead of writing custom code for most standard increments and decrements.
+
+Can this be done using AI? Yes but it would usually last longer and with uncertain results.
 
 ## Known Issues
 
