@@ -17,13 +17,15 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 
 | Command Palette name | Default shortcut* | Mac shortcut* | Shortcuts other devs use |
 | --- | ----------- | -- | -- |
-| `Mega: Add selection for increment` | Ctrl + Alt + 8 | ⌥ ⌘ 8 | Ctrl+Shift+8, Ctrl+Shift+Q  |
+| `Mega: Add selection for increment` | Ctrl + Alt + 8 | ⌥ ⌘ 8 | Ctrl+Shift+8, Ctrl+Alt+J, Ctrl+Shift+Q  |
 | `Mega: Do increment` | Ctrl + Alt + U | ⌥ ⌘ U | Ctrl+Shift+Insert, Ctrl+Shift+U |
 | `Mega: Clear all selections` | Ctrl + Alt + 0 | ⌥ ⌘ 9 | Ctrl+Shift+Delete, Ctrl+Alt+X |
 | `Mega: Advanced increment` | Ctrl + Alt + 9 | ⇧ ⌥ 0 | Ctrl+Shift+9, Ctrl+Shift+4, Ctrl+Alt+7 |
 
 \* *Shortcuts can be changed in VSCode settings.*  
 \* *On Macs ⌥ ⌘ 0 is by default used for Toggle editor layout.*  
+\* *On Windows 10 with default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. After several shortcut combinations tested Ctrl+Alt+J works well.*  
+
 
 ## How it works
 1) In the editor select part of text on line.
@@ -55,6 +57,9 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 Let's see that in motion:
 
 ![howitworks](/media/basic02c.gif)
+
+Or on YouTube: https://youtu.be/URxZXJn2n1w
+
 
 ## Example
 
@@ -350,6 +355,9 @@ Let's see that in motion:
 
   ![howitworks](/media/gui-gif1.gif)
 
+Or on YouTube: https://youtu.be/YPACNYr_03A
+
+
 ## Continuous and ranged enum variants
 
 - **continuous**: treats enum list as continuous i.e. infinite and increments items in linear fashion. When incrementation reaches the end of list it goes further like there is new list attached. If we increment enum with simple numbers ["one","two","three","four","five","six","seven","eight","nine","ten"] starting from `one` and with stepping 3 we will have: `one`, `four`, `seven`, `ten` *and then:* `three` (lite thirteen), `six` (like sixteen), `nine` (like nineteen) etc. etc.
@@ -399,7 +407,10 @@ Can this be done using AI? Yes but it would usually last longer and with uncerta
 
 ## Known Issues
 
-None so far :)
+Windows 10:
+- With default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. After several shortcut combinations tested Ctrl+Alt+J works well.
+- When items are selected with `Enter` in menu in editor sometimes `Enter` is written in editor itself so selection iz owerwritten and new line is inserted. After Ctrl+Z `Undo` all works well.
+- On white background GUI look not well and some buttons are not rendered well.
 
 
 ## Licence
