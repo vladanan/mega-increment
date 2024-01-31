@@ -5,6 +5,12 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [0.8.1] - 2024-01-31
+### Added
+- GitHub issue tracking and repo details.
+### Fixed
+- Readme incompatibilities for markdown at VSCode and GitHub.
+
 ## [0.8.0] - 2024-01-31
 ### Added
 - Git choose dirs and files, new repository, new repo at GitHub.
