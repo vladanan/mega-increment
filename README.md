@@ -73,17 +73,8 @@
     <li style="background-color: rgb(60, 69, 98); width: 260px;">Increment test</li>
     <li style="background-color: rgb(40, 69, 98); width: 280px;">Increment test</li>
     ```
-    <li style="background-color: rgb(200, 69, 98); width: 120px;">Increment test</li>
-    <li style="background-color: rgb(180, 69, 98); width: 140px;">Increment test</li>
-    <li style="background-color: rgb(160, 69, 98); width: 160px;">Increment test</li>
-    <li style="background-color: rgb(140, 69, 98); width: 180px;">Increment test</li>
-    <li style="background-color: rgb(120, 69, 98); width: 200px;">Increment test</li>
-    <li style="background-color: rgb(100, 69, 98); width: 220px;">Increment test</li>
-    <li style="background-color: rgb(80, 69, 98); width: 240px;">Increment test</li>
-    <li style="background-color: rgb(60, 69, 98); width: 260px;">Increment test</li>
-    <li style="background-color: rgb(40, 69, 98); width: 280px;">Increment test</li>
 
-- Lets see that in real:  
+  + Lets see that in real:  
     ![example1](/media/example1a.png)  
     ![example1](/media/example1b.png)
 
@@ -291,21 +282,8 @@ switch (year.selectedMonth) {
 <p style="color: darkgreen" >This text will be interesting to see.</p>
 ```
 - result:
-  <p style="color: lightblue" >This text will be interesting to see.</p>
-  <p style="color: blue" >This text will be interesting to see.</p>
-  <p style="color: darkblue" >This text will be interesting to see.</p>
-  <p style="color: lightsalmon" >This text will be interesting to see.</p>
-  <p style="color: salmon" >This text will be interesting to see.</p>
-  <p style="color: darksalmon" >This text will be interesting to see.</p>
-  <p style="color: lightcyan" >This text will be interesting to see.</p>
-  <p style="color: cyan" >This text will be interesting to see.</p>
-  <p style="color: darkcyan" >This text will be interesting to see.</p>
-  <p style="color: lightgrey" >This text will be interesting to see.</p>
-  <p style="color: grey" >This text will be interesting to see.</p>
-  <p style="color: darkgrey" >This text will be interesting to see.</p>
-  <p style="color: lightgreen" >This text will be interesting to see.</p>
-  <p style="color: green" >This text will be interesting to see.</p>
-  <p style="color: darkgreen" >This text will be interesting to see.</p>
+
+![howitworks](/media/example-enums.png)
 
 - So what happened with color attribute? Enum ["light", "", "dark"] went normally with stepping 1, but enum ["blue", "salmon", "cyan","gray", "green"] because of stepping 0.333333 changed `only once every third time` so for each color we get three variants of different saturation (light, normal, dark). This kind of `fractional stepping` we can also do with integer numbers, dateISO, timeISO and simple. Try it yourself.
 
@@ -325,11 +303,11 @@ There are two variants of enums but since they can be interchangeably used only 
 - Graphical user interface for Advanced increments provides user with interactive incrementing, detailed picture of selections, enums, result, changing line text with active settings, multi line strings, direct insert of enums in line text, retrieving line text, changing variant of enums, exporting results, exporting API calls and more to come.
 - Lets se how it looks on previous example with colors.
 
-  1) Advanced increment tab  
+  1. Advanced increment tab  
 
   **Line text section:**
 
-  2) Number of times the line text is incremented
+  2. Number of times the line text is incremented
   3) Line text is automatically retrieved from editor
   4) Use Alt+8 to get focus on line text  
   *More information about Alt+8 and other web accesskeys in: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey*
