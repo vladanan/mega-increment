@@ -5,6 +5,12 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+
+## [1.0.0] - 2024-02-01
+
+- Extension published on Visual Studio Code Marketplace and to all.
+
+
 ## [0.9.3] - 2024-02-01
 
 ### Fixed
