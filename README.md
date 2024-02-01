@@ -4,11 +4,11 @@ Mega-increment extension is intended to ease parallel independent incrementation
 
 `Basic` functionality is available in the **editor** tabs and `advanced options` are implemented in a separate **GUI** tab.
 
-Check out short example videos:
+Check out short `example videos` on **YouTube**:
 - Editor: https://youtu.be/URxZXJn2n1w
 - GUI Advanced Increment: https://youtu.be/YPACNYr_03A
 
-If you found `bug` or other issue please report here: https://github.com/vladanan/mega-increment/issues  
+If you have found a `bug` or other issue please report here: https://github.com/vladanan/mega-increment/issues  
 
 If you have `feature request` or want to `donate and support` further development: https://paypal.me/vladanandjelkovic  
 

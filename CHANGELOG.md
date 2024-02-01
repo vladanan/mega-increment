@@ -5,6 +5,10 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.0.1] - 2024-02-01
+
+- Typos...
+
 
 ## [1.0.0] - 2024-02-01
 
@@ -32,7 +36,7 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 ## [0.9.1] - 2024-01-31
 
 ### Deprecated
-- Extension not enabled in Windows 7 despite lowering VSCode engine and @types/vscode to 1.55.0.
+- Extension not enabled in Windows 7 despite lowering VSCode engine and @types/vscode to 1.62.0.
 
 ### Added
 - Windows 10 quirks documented in Read.me.
