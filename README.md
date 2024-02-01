@@ -2,9 +2,42 @@
 
 Mega-increment extension is intended to ease parallel independent incrementations and decrementations in various strings. It can be used in writing code for lists, enums, arrays, tests, html and xml tags, csv files, data base examples and tests, date-time iterations, hexadecimal and binary register allocations and many other uses.
 
-Basic functionality is available in the **editor** tabs and advanced options are implemented in a separate **GUI** tab.
+`Basic` functionality is available in the **editor** tabs and `advanced options` are implemented in a separate **GUI** tab.
 
-## Editor
+Check out short example videos:
+- Editor: https://youtu.be/URxZXJn2n1w
+- GUI Advanced Increment: https://youtu.be/YPACNYr_03A
+
+If you found `bug` or other issue please report here: https://github.com/vladanan/mega-increment/issues  
+
+If you have `feature request` or want to `donate and support` further development: https://paypal.me/vladanandjelkovic  
+
+
+
+<h2 id="Contents">Contents</h2>
+
+[Shortcuts](#Shortcuts)  
+[How it works](#Howitworks)  
+[Example with numbers](#Examplewithnumbers)  
+[Date, time](#Datetime)  
+[Units and decimal point](#Unitsanddecimalpoint)  
+[Simple, random, crypto](#Simplerandomcrypto)  
+[Hex and binary](#Hexandbinary)  
+[Overlapping selections and deleting all selections](#Overlappingselectionsanddeletingallselections)  
+[Enums and lists](#Enumsandlists)  
+[GUI for Advanced Increment](#GUIforAdvancedIncrement)  
+[Continuous and ranged enum variants](#Continuousandrangedenumvariants)  
+[Public API](#PublicAPI)  
+[Settings](#Settings)  
+[FAQ](#FAQ)  
+[Known Issues](#KnownIssues)  
+[Licence](#Licence)  
+
+
+
+
+<h2 id="Shortcuts">Shortcuts</h2>
+
 
 There are four simple commands which are used in editor:
   - when some part of line is selected user can **add** it for incrementation (and then select type and stepping)
@@ -26,8 +59,14 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 \* *On Macs ⌥ ⌘ 0 is by default used for Toggle editor layout.*  
 \* *On Windows 10 with default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. After several shortcut combinations tested Ctrl+Alt+J works well.*  
 
+[Back to Contents](#Contents)
 
-## How it works
+
+
+
+<h2 id="Howitworks">How it works</h2>
+
+
 1) In the editor select part of text on line.
 2) Then issue **add** command (Ctrl+Alt+8) to add it for incrementing.
 3) Choose the type of text which indicates to the incrementer how to treat selected text (available type options depend on what is selected).
@@ -58,10 +97,15 @@ Let's see that in motion:
 
 ![howitworks](/media/basic02c.gif)
 
-Or on YouTube: https://youtu.be/URxZXJn2n1w
+
+[Back to Contents](#Contents)
 
 
-## Example
+
+
+
+<h2 id="Examplewithnumbers">Example with numbers</h2>
+
 
 - If we want this `li`:  
 `<li style="background-color: rgb(200, 69, 98); width: 120px;">Increment test</li>`  
@@ -94,7 +138,15 @@ Or on YouTube: https://youtu.be/URxZXJn2n1w
 - If you use decimal stepping on integer numbers i.e. inputting stepping of 0.333333 they will not turn in to floating point but instead they will be incremented every third time. If you input stepping of 0.25 increment will occur every fourth time, for 0.2 fifth and so on. This `fractional stepping` is available also for simple, date, time and enums.
 - Numbers with floating point are recognized by decimal point, so if you want 5 to be incremented by 0.2 you should write it as 2.0.
 
-## Date, time
+[Back to Contents](#Contents)
+
+
+
+
+
+<h2 id="Datetime">Date, time</h2>
+
+
 - Lets say that we need alarms fetched from translation JSON but from every second day and ten minutes earlier. We start with this:
 ```javascript
 const alarms: Alarm[] = [
@@ -126,7 +178,14 @@ const alarms: Alarm[] = [
 - If you use decimal stepping on date and time i.e. inputting stepping of 0.333333 they will be incremented every third time. If you input stepping of 0.25 increment will occur every fourth time, for 0.2 fifth and so on. This `fractional stepping` is available also for types: simple, integer numbers and enums.
 - **Some other date and time formats will soon be implemented in extension.**
 
-## Units and decimal point
+[Back to Contents](#Contents)
+
+
+
+
+<h2 id="Unitsanddecimalpoint">Units and decimal point</h2>
+
+
 - What if we need shipping table with increasing weights by 12.6kg and decreasing price by $0.6 for bulk transport?
 ```html
 <table>
@@ -155,7 +214,14 @@ const alarms: Alarm[] = [
 <tr><td>Above 88kg</td><td>$1.50/kg</td></tr>
 </table>
 
-## Simple, random, crypto
+[Back to Contents](#Contents)
+
+
+
+
+<h2 id="Simplerandomcrypto">Simple, random, crypto</h2>
+
+
 - Maybe you need to increase individual characters, get random or safe crypto values?
 
 ```javascript
@@ -186,7 +252,13 @@ const autoTokens: Token[] = [
 - **random**: any string which will be followed by random printable ASCII characters, not cryptographically safe format.
 - For `crypto` and `random` stepping is irrelevant.
 
-## Hex and binary
+[Back to Contents](#Contents)
+
+
+
+
+<h2 id="Hexandbinary">Hex and binary</h2>
+
 
 - Maybe we need to increment hexadecimal and binary numbers in ASCII?
 
@@ -224,7 +296,14 @@ const autoTokens: Token[] = [
 - Hex is case insensitive and produces lowercase letters.
 - Hex & binary are not tested with negative numbers yet, take care of results for signed values.
 
-## Overlapping selections and deleting all selections
+[Back to Contents](#Contents)
+
+
+
+
+
+<h2 id="Overlappingselectionsanddeletingallselections">Overlapping selections and deleting all selections</h2>
+
 
 - If we make selection which overlaps with other then the extension will delete existing selection(s) and ignore new one. In previous example
 ```html
@@ -233,8 +312,14 @@ const autoTokens: Token[] = [
 - that can be done by first selecting and adding `Nice` and than `e hex`. Or selecting `Nice` and `stars` and then  `e hex s`. In first case `Nice` would be deleted and in second case `Nice` and `stars` would be deleted.
 - When you want to **delete** all chosen selections at once and start over again then issue **clear** command (Ctrl+Alt+0).
 
+[Back to Contents](#Contents)
 
-## Enums
+
+
+
+<h2 id="Enumsandlists">Enums and lists</h2>
+
+
 - Enums and lists work as JSON arrays which are predefined in extension settings.
 - You go to VSCode Settings (Ctrl + ,)(Mac: ⌘ ,) and then find `Mega Increment` section or just type '**mega**' in search field and you get to Mega Increment settings quickly.
 - Once there find `Mega-increment: Key Value Pairs`, click `Add Item`, in `Key` field write title for your enum/list, in `Value` field write enum/list in JSON array format, for example for months:
@@ -305,9 +390,14 @@ Here are few already prepared enums which you may find useful during work and in
 
 There are two variants of enums but since they can be interchangeably used only in Advanced Increment GUI they will be covered later.
 
+[Back to Contents](#Contents)
 
 
-## GUI
+
+
+
+<h2 id="GUIforAdvancedIncrement">GUI for Advanced Increment</h2>
+
 
 Graphical user interface for Advanced increments provides user with interactive incrementing, detailed picture of selections, enums, result, changing line text with active settings, multi line strings, direct insert of enums in line text, retrieving line text, changing variant of enums, exporting results, exporting API calls and more to come.  
 
@@ -355,10 +445,14 @@ Let's see that in motion:
 
   ![howitworks](/media/gui-gif1.gif)
 
-Or on YouTube: https://youtu.be/YPACNYr_03A
+[Back to Contents](#Contents)
 
 
-## Continuous and ranged enum variants
+
+
+
+<h2 id="Continuousandrangedenumvariants">Continuous and ranged enum variants</h2>
+
 
 - **continuous**: treats enum list as continuous i.e. infinite and increments items in linear fashion. When incrementation reaches the end of list it goes further like there is new list attached. If we increment enum with simple numbers ["one","two","three","four","five","six","seven","eight","nine","ten"] starting from `one` and with stepping 3 we will have: `one`, `four`, `seven`, `ten` *and then:* `three` (lite thirteen), `six` (like sixteen), `nine` (like nineteen) etc. etc.
 
@@ -369,12 +463,23 @@ Or on YouTube: https://youtu.be/YPACNYr_03A
   * So in this case  and only 2 items from enum will be repeated constantly in result: `six` and `nine`.
   * Therefore, ranged is very specific and you must clearly understand how it behaves in order to use it correctly in relation to continuous. Best is to first test result with your expectations.
 
-
-## Public API
-This project includes public API with same functions as extension. You can see the MACf Documentation here in VSCode in extension profile or at: https://vezbamo.vercel.app/api/mi/pad
+[Back to Contents](#Contents)
 
 
-## Settings
+
+
+<h2 id="PublicAPI">Public API</h2>
+
+
+This project includes public API with same functions as extension. You can see the MACf Documentation at: https://vezbamo.vercel.app/api/mi/pad
+
+[Back to Contents](#Contents)
+
+
+
+
+<h2 id="Settings">Settings</h2>
+
 
 For Mega Increment settings you go to VSCode Settings and then find Mega Increment section or just type '**mega**' in search field and you get to those settings quickly.
 - *Depending od OS especially on some Linux systems VSCode might have to be restarted for some settings to take effect.*
@@ -386,11 +491,13 @@ This extension contributes the following settings in VSCode:
     * ranged: Enum list is contained in its range so increments beyond list length are trimmed.
 - `Mega-increment: Key Value Pairs`: Create custom key value pair lists for frequently used enums and lists.  
 
+[Back to Contents](#Contents)
 
-## FAQ
 
-### Why in GUI sections are divided and named Basic, JS, C?
-![nodonations](/media/nodonations.png)
+
+
+<h2 id="FAQ">FAQ</h2>
+
 
 ### Why would this extension be needed if those same things can be programmed at need with loops etc.?
 I developed this extension from my personal need so I can vouch for the following reasons:
@@ -405,14 +512,29 @@ Since I offer a public API outside of extension anyone from any app can use exte
 
 Can this be done using AI? Yes but it would usually last longer and with uncertain results.
 
-## Known Issues
+
+### Why GUI sections are divided and named Basic, JS, C?
+![nodonations](/media/nodonations2.png)
+
+
+[Back to Contents](#Contents)
+
+
+
+ 
+<h2 id="KnownIssues">Known Issues</h2>
+
 
 Windows 10:
-- With default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. After several shortcut combinations tested Ctrl+Alt+J works well.
+- With default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. The same can happen wiht Ctrl+Alt+9 or 0. After several shortcut combinations tested Ctrl+Alt+J works well.
 - When items are selected with `Enter` in menu in editor sometimes `Enter` is written in editor itself so selection iz owerwritten and new line is inserted. After Ctrl+Z `Undo` all works well.
-- On white background GUI look not well and some buttons are not rendered well.
+
+[Back to Contents](#Contents)
 
 
-## Licence
+
+
+<h2 id="Licence">Licence</h2>
+
 
 Copyright (C) Vladan Anđelković. All rights reserved.

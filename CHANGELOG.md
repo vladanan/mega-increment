@@ -5,6 +5,16 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [0.9.3] - 2024-02-01
+
+### Fixed
+- GUI for white background and smaller displays.
+- GUI for fresh instalations.
+
+### Added
+- Readme links, contents and fixes.
+
+
 ## [0.9.2] - 2024-01-31
 
 - Bundling and packing.
