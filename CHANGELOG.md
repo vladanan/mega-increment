@@ -5,6 +5,12 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.0.6] - 2024-02-02
+
+- New Readme useer suggestions and updates.
+- About page @ vezbamo.
+
+
 ## [1.0.5] - 2024-02-02
 
 - Readme updates.

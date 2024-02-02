@@ -2,7 +2,9 @@
 
 Mega-increment extension is intended to ease parallel independent incrementations and decrementations in various strings. It can be used in writing code for lists, enums, arrays, tests, html and xml tags, csv files, data base examples and tests, date-time iterations, hexadecimal and binary register allocations and many other uses.
 
-`Basic` functionality is available in the **editor** tabs and `advanced options` are implemented in a separate **GUI** tab.
+- `Basic` functionality is available in the **editor** tabs and `advanced options` are implemented in a separate **GUI** tab.
+- **Editor** supports only `single line mode` (and cursor has `to stay on line` from which commands are called).
+- **GUI** supports `multiline`, changing line, `interactivity`, `exports` and other advanced optons.
 
 - Editor:
 ![howitworks](/media/basic02c.gif)
@@ -14,7 +16,7 @@ There are also example videos on YouTube for [editor](https://youtu.be/URxZXJn2n
 
 If you have found a `bug` or other issue or you have `feature request` please write here: https://github.com/vladanan/mega-increment/issues  
 
-If you want to `donate and support` further development: https://paypal.me/vladanandjelkovic  
+**If you want to `donate and support` further development**: https://paypal.me/vladanandjelkovic  
 
 
 
