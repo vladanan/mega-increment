@@ -5,15 +5,23 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.0.7] - 2024-02-02
+
+- About page @ vezbamo.
+- Fix for html entities in line text.
+- Linkedin update.
+- Details at config files.
+
+
 ## [1.0.6] - 2024-02-02
 
 - New Readme useer suggestions and updates.
-- About page @ vezbamo.
 
 
 ## [1.0.5] - 2024-02-02
 
 - Readme updates.
+
 
 ## [1.0.4] - 2024-02-02
 
@@ -23,6 +31,7 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 ## [1.0.3] - 2024-02-02
 
 - Public API Docs and home page changes.
+
 
 
 ## [1.0.2] - 2024-02-01
