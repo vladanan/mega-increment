@@ -8,9 +8,9 @@ Check out short `example videos` on **YouTube**:
 - Editor: https://youtu.be/URxZXJn2n1w
 - GUI Advanced Increment: https://youtu.be/YPACNYr_03A
 
-If you have found a `bug` or other issue please report here: https://github.com/vladanan/mega-increment/issues  
+If you have found a `bug` or other issue or you have `feature request` please write here: https://github.com/vladanan/mega-increment/issues  
 
-If you have `feature request` or want to `donate and support` further development: https://paypal.me/vladanandjelkovic  
+If you want to `donate and support` further development: https://paypal.me/vladanandjelkovic  
 
 
 
@@ -471,7 +471,7 @@ Let's see that in motion:
 <h2 id="PublicAPI">Public API</h2>
 
 
-This project includes public API with same functions as extension. You can see the MACf Documentation at: https://vezbamo.vercel.app/api/mi/pad or at GitHub: 
+This project includes public API with same functions as extension. You can see the MACf API Documentation at: https://vezbamo.vercel.app/api/mi/pad or at [GitHub](https://github.com/vladanan/mega-increment/blob/master/PublicAPIDocs.md).
 
 [Back to Contents](#Contents)
 

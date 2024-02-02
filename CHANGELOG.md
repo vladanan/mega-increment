@@ -5,6 +5,11 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.0.3] - 2024-02-02
+
+- Public API Docs and home page changes.
+
+
 ## [1.0.2] - 2024-02-01
 
 - Auto API link generator fixed to point @ vezbamo API end point.
