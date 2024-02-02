@@ -471,7 +471,7 @@ Let's see that in motion:
 <h2 id="PublicAPI">Public API</h2>
 
 
-This project includes public API with same functions as extension. You can see the MACf Documentation at: https://vezbamo.vercel.app/api/mi/pad
+This project includes public API with same functions as extension. You can see the MACf Documentation at: https://vezbamo.vercel.app/api/mi/pad or at GitHub: 
 
 [Back to Contents](#Contents)
 
