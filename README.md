@@ -4,7 +4,7 @@ Mega-increment extension is intended to ease parallel independent incrementation
 
 - `Basic` functionality is available in the **editor** tabs and `advanced options` are implemented in a separate **GUI** tab.
 - **Editor** supports only `single line mode` (and cursor has `to stay on line` from which commands are called).
-- **GUI** supports `multiline`, changing line, `interactivity`, `exports` and other advanced optons.
+- **GUI** supports `multiline`, changing line, `interactivity`, `exports` and other advanced options.
 
 - Editor:
 ![howitworks](/media/basic02c.gif)

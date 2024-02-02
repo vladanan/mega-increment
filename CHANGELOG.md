@@ -454,7 +454,7 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 ## [0.0.0] - 2023-12-03
 
-- In previous period during some programming tasks I needed functionality for parallel independent incrementations and decrementations in complex strings. So I searched extensions for VSCode but didn't found what I needed. Then I came up with the idea of making an extension with such functionalities and made first draft.
+- In the previous period during some programming tasks I needed functionality for parallel independent incrementations and decrementations in complex strings. So I searched extensions for VSCode but didn't find what I needed. Then I came up with the idea of making an extension with such functionalities and made first draft.
 
 ## Licence
 Copyright (C) Vladan Anđelković. All rights reserved.
