@@ -5,6 +5,15 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.0.5] - 2024-02-02
+
+- Readme updates.
+
+## [1.0.4] - 2024-02-02
+
+- Extension name at marketplace fix.
+
+
 ## [1.0.3] - 2024-02-02
 
 - Public API Docs and home page changes.

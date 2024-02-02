@@ -4,9 +4,13 @@ Mega-increment extension is intended to ease parallel independent incrementation
 
 `Basic` functionality is available in the **editor** tabs and `advanced options` are implemented in a separate **GUI** tab.
 
-Check out short `example videos` on **YouTube**:
-- Editor: https://youtu.be/URxZXJn2n1w
-- GUI Advanced Increment: https://youtu.be/YPACNYr_03A
+- Editor:
+![howitworks](/media/basic02c.gif)
+
+- GUI Advanced Increment:
+![howitworks](/media/gui-gif1.gif)
+
+There are also example videos on YouTube for [editor](https://youtu.be/URxZXJn2n1w) and [GUI Advanced Increment](https://youtu.be/YPACNYr_03A).
 
 If you have found a `bug` or other issue or you have `feature request` please write here: https://github.com/vladanan/mega-increment/issues  
 
