@@ -5,6 +5,12 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.0.8] - 2024-02-03
+
+- Fix for permutated shortcuts for Mac.
+- Typos in Docs.
+
+
 ## [1.0.7] - 2024-02-02
 
 - About page @ vezbamo.

@@ -52,14 +52,14 @@ There are four simple commands which are used in editor:
   - start **Advanced GUI** mode
 
 All commands are available in VSCode standard Command Palette (Linux/Windows: Ctrl+Shift+P / F1, Mac: ⇧⌘P / F1).  
-***Tip:*** *By typing '**mega**' in Command Palette you get all of them quickly*
+***Tip:*** *By typing '**mega**' in Command Palette you get all of them quickly.*
 
 | Command Palette name | Default shortcut* | Mac shortcut* | Shortcuts other devs use |
 | --- | ----------- | -- | -- |
 | `Mega: Add selection for increment` | Ctrl + Alt + 8 | ⌥ ⌘ 8 | Ctrl+Shift+8, Ctrl+Alt+J, Ctrl+Shift+Q  |
 | `Mega: Do increment` | Ctrl + Alt + U | ⌥ ⌘ U | Ctrl+Shift+Insert, Ctrl+Shift+U |
-| `Mega: Clear all selections` | Ctrl + Alt + 0 | ⌥ ⌘ 9 | Ctrl+Shift+Delete, Ctrl+Alt+X |
-| `Mega: Advanced increment` | Ctrl + Alt + 9 | ⇧ ⌥ 0 | Ctrl+Shift+9, Ctrl+Shift+4, Ctrl+Alt+7 |
+| `Mega: Clear all selections` | Ctrl + Alt + 0 | ⇧ ⌘ 0 | Ctrl+Shift+Delete, Ctrl+Alt+X |
+| `Mega: Advanced increment` | Ctrl + Alt + 9 | ⌥ ⌘ 9 | Ctrl+Shift+9, Ctrl+Shift+4, Ctrl+Alt+7 |
 
 \* *Shortcuts can be changed in VSCode settings.*  
 \* *On Macs ⌥ ⌘ 0 is by default used for Toggle editor layout.*  
@@ -74,7 +74,7 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 
 
 1) In the editor select part of text on line.
-2) Then issue **add** command (Ctrl+Alt+8) to add it for incrementing.
+2) Then issue **add** command (Ctrl+Alt+8 / ⌥⌘8) to add it for incrementing.
 3) Choose the type of text which indicates to the incrementer how to treat selected text (available type options depend on what is selected).
 
     ![howitworks](/media/howitworks123.png)
@@ -89,11 +89,11 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 
     You can also click on Status info bar and get more information about current selections.
 
-5) Issue command for **increment** (Ctrl+Alt+U) 9 times and then below the active line new lines will appear with selected part incremented.  
+5) Issue command for **increment** (Ctrl+Alt+U / ⌥⌘U) 9 times and then below the active line new lines will appear with selected part incremented.  
 
     ![howitworks](/media/howitworks5.png)
 
-6) To delete current selection(s) hit Ctrl+Alt+0.
+6) To delete current selection(s) hit Ctrl+Alt+0 / ⇧⌘0.
 
     ![howitworks](/media/howitworks6.png)
 
@@ -139,10 +139,10 @@ Let's see that in motion:
 
 - Remember:
   + When you want to **delete** chosen selection(s) and start over again then issue **clear** command (Ctrl+Alt+0).
-  + If you want to try the same thing in Advanced GUI issue **advanced increment** command (Ctrl+alt+9).
+  + If you want to try the same thing in Advanced GUI issue **advanced increment** command (Ctrl+Alt+9).
 
 - If you use decimal stepping on integer numbers i.e. inputting stepping of 0.333333 they will not turn in to floating point but instead they will be incremented every third time. If you input stepping of 0.25 increment will occur every fourth time, for 0.2 fifth and so on. This `fractional stepping` is available also for simple, date, time and enums.
-- Numbers with floating point are recognized by decimal point, so if you want 5 to be incremented by 0.2 you should write it as 2.0.
+- Numbers with floating point are recognized by decimal point, so if you want 5 to be incremented by 0.2 you should write it as 5.0.
 
 [Back to Contents](#Contents)
 
@@ -180,7 +180,7 @@ const alarms: Alarm[] = [
 + **dateISO**: date part from ISO full date string
 + **timeISO**: time part without millisecond from ISO full date string  
 ***Tip:*** *Date: If you want to increase only months then don't increase days by 30 because not all months have 30 days. Better select only month and increment by appropriate stepping.*  
-***Tip:*** *Time: To increase seconds stepping by 1-59, for minutes stepping: min\*60, for hours stepping: hours\*3600.*
+***Tip:*** *Time: To increase seconds input stepping: 1-59, for minutes stepping: min\*60, for hours stepping: hours\*3600.*
 - If you use decimal stepping on date and time i.e. inputting stepping of 0.333333 they will be incremented every third time. If you input stepping of 0.25 increment will occur every fourth time, for 0.2 fifth and so on. This `fractional stepping` is available also for types: simple, integer numbers and enums.
 - **Some other date and time formats will soon be implemented in extension.**
 
@@ -533,7 +533,7 @@ Can this be done using AI? Yes but it would usually last longer and with uncerta
 
 Windows 10:
 - With default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. The same can happen wiht Ctrl+Alt+9 or 0. After several shortcut combinations tested Ctrl+Alt+J works well.
-- When items are selected with `Enter` in menu in editor sometimes `Enter` is written in editor itself so selection iz owerwritten and new line is inserted. After Ctrl+Z `Undo` all works well.
+- When items are selected with `Enter` in menu in editor sometimes `Enter` is written in editor itself so selection iz overwritten and new line is inserted. After Ctrl+Z `Undo` all works well.
 
 [Back to Contents](#Contents)
 
