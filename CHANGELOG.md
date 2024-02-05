@@ -8,7 +8,7 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 ## [1.0.9] - 2024-02-04
 
-- New logo. test 7
+- New logo. test 8
 
 
 ## [1.0.8] - 2024-02-03
