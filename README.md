@@ -88,6 +88,7 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
     ![howitworks](/media/howitworks4b.png)
 
     You can also click on Status info bar and get more information about current selections.
+    In settings one can disable all notifications except for overlapping selection(s).
 
 5) Issue command for **increment** (Ctrl+Alt+U / ⌥⌘U) 9 times and then below the active line new lines will appear with selected part incremented.  
 
@@ -495,6 +496,7 @@ This extension contributes the following settings in VSCode:
 - `Mega-increment: Default Enum Variant`: Choose default incrementation variant for enums.
     * continuous: Treats enum list as continuous i.e. infinite and increments items in linear fashion.
     * ranged: Enum list is contained in its range so increments beyond list length are trimmed.
+- `Mega-increment: Disable Notifications`: Disable all notifications except for overlapping selection(s).
 - `Mega-increment: Key Value Pairs`: Create custom key value pair lists for frequently used enums and lists.  
 
 [Back to Contents](#Contents)

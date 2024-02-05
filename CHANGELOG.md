@@ -4,6 +4,13 @@ All notable changes to the "mega-increment" extension will be documented in this
 File is structured by following recommendations from [Keep a Changelog](http://keepachangelog.com/).  
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
+## [1.0.9] - 2024-02-04
+
+### Added
+- New logo.
+- New repo configuration.
+- Simplified notifications and added option for disabling all notifications except for overlapping selection(s).
+
 
 ## [1.0.8] - 2024-02-03
 
