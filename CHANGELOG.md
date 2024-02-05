@@ -5,12 +5,6 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
-
-## [1.0.9] - 2024-02-04
-
-- New logo. test 12
-
-
 ## [1.0.8] - 2024-02-03
 
 - Fix for permutated shortcuts for Mac.
