@@ -4,7 +4,22 @@ All notable changes to the "mega-increment" extension will be documented in this
 File is structured by following recommendations from [Keep a Changelog](http://keepachangelog.com/).  
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
-## [1.0.9] - 2024-02-04
+
+
+## [1.1.0] - 2024-02-06
+
+### Added
+- Right click for Add selection and Advanced GUI.
+- Click on Status bar for Increment and Clear selections.
+- Readme additions and fixes.
+
+### Fixed
+- No need to restart VSCode/extension for some settings to take effect.
+- YouTube videos changed from mp4 to mpg for slightly better quality.
+
+
+
+## [1.0.9] - 2024-02-05
 
 ### Added
 - New logo.

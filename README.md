@@ -12,7 +12,7 @@ Mega-increment extension is intended to ease parallel independent incrementation
 - GUI Advanced Increment:
 ![howitworks](/media/gui-gif1.gif)
 
-There are also example videos on YouTube for [editor](https://youtu.be/URxZXJn2n1w) and [GUI Advanced Increment](https://youtu.be/YPACNYr_03A).
+There are also example videos on YouTube for [editor](https://youtu.be/75dgl6m22J0) and [GUI Advanced Increment](https://youtu.be/oWDa46vQArk).
 
 If you have found a `bug` or other issue or you have `feature request` please write here: https://github.com/vladanan/mega-increment/issues  
 
@@ -74,39 +74,41 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 
 
 1) In the editor select part of text on line.
-2) Then issue **add** command (Ctrl+Alt+8 / ⌥⌘8) to add it for incrementing.
+2) Then issue **add** command (Ctrl+Alt+8 / ⌥ ⌘ 8) to add it for incrementing.  
+  ***Tip:*** *You can also right click on selected text and choose Mega: Add selection for increment.*
 3) Choose the type of text which indicates to the incrementer how to treat selected text (available type options depend on what is selected).
 
-    ![howitworks](/media/howitworks123.png)
+    ![howitworks123](/media/howitworks123.png)
 
 4) Choose stepping for incrementation, default steppiing is set to **1**:
 
-    ![howitworks](/media/howitworks4a.png)
+    ![howitworks4a](/media/howitworks4a.png)
 
     After entering your desired stepping and hitting Enter you will get notification about new selection added and also Status bar info about it:
 
-    ![howitworks](/media/howitworks4b.png)
+    ![howitworks4b](/media/howitworks4b.png)
 
     You can also click on Status info bar and get more information about current selections.
-    In settings one can disable all notifications except for overlapping selection(s).
+    In extension settings one can disable all notifications except for overlapping selection(s).
 
-5) Issue command for **increment** (Ctrl+Alt+U / ⌥⌘U) 9 times and then below the active line new lines will appear with selected part incremented.  
+5) Issue command for **increment** (Ctrl+Alt+U / ⌥ ⌘ U) 9 times and then below the active line new lines will appear with selected part incremented.  
+  ***Tip:*** *You can also click on Status bar INCR button.*
 
-    ![howitworks](/media/howitworks5.png)
+    ![howitworks5](/media/howitworks5.png)
 
-6) To delete current selection(s) hit Ctrl+Alt+0 / ⇧⌘0.
+6) To delete current selection(s) hit Ctrl+Alt+0 / ⇧ ⌘ 0.  
+  ***Tip:*** *You can also click on Status bar Clear all selections button: ![clear-all](/media/clear-all.png) .*
 
-    ![howitworks](/media/howitworks6.png)
+    ![howitworks6](/media/howitworks6.png)
 
 **That's it!**  
 
 Let's see that in motion:
 
-![howitworks](/media/basic02c.gif)
+![basic02c](/media/basic02c.gif)
 
 
 [Back to Contents](#Contents)
-
 
 
 
@@ -135,12 +137,12 @@ Let's see that in motion:
     ```
 
   + Lets see that in real:  
-    ![example1](/media/example1a.png)  
-    ![example1](/media/example1b.png)
+    ![example1a](/media/example1a.png)  
+    ![example1b](/media/example1b.png)
 
 - Remember:
-  + When you want to **delete** chosen selection(s) and start over again then issue **clear** command (Ctrl+Alt+0).
-  + If you want to try the same thing in Advanced GUI issue **advanced increment** command (Ctrl+Alt+9).
+  + When you want to **delete** chosen selection(s) and start over again then issue **clear** command (Ctrl+Alt+0) or click on Status bar Clear all selections button ![clear-all](/media/clear-all.png) .
+  + If you want to try the same thing in **Advanced GUI** issue advanced increment command (Ctrl+Alt+9) or right click on line and then click Mega: Advanced increment.
 
 - If you use decimal stepping on integer numbers i.e. inputting stepping of 0.333333 they will not turn in to floating point but instead they will be incremented every third time. If you input stepping of 0.25 increment will occur every fourth time, for 0.2 fifth and so on. This `fractional stepping` is available also for simple, date, time and enums.
 - Numbers with floating point are recognized by decimal point, so if you want 5 to be incremented by 0.2 you should write it as 5.0.
@@ -384,7 +386,7 @@ switch (year.selectedMonth) {
 ```
 - result:
 
-![howitworks](/media/example-enums.png)
+![example-enums](/media/example-enums.png)
 
 - So what happened with color attribute? Enum ["light", "", "dark"] went normally with stepping 1, but enum ["blue", "salmon", "cyan","gray", "green"] because of stepping 0.333333 changed `only once every third time` so for each color we get three variants of different saturation (light, normal, dark). This kind of `fractional stepping` we can also do with integer numbers, dateISO, timeISO and simple. Try it yourself.
 
@@ -446,11 +448,11 @@ Lets se how it looks on previous example with colors.
       + clipboard and
       + JSON array.
 
-  ![howitworks](/media/gui3.png)
+  ![gui3](/media/gui3.png)
 
 Let's see that in motion:
 
-  ![howitworks](/media/gui-gif1.gif)
+  ![gui-gif1](/media/gui-gif1.gif)
 
 [Back to Contents](#Contents)
 
@@ -522,7 +524,7 @@ Can this be done using AI? Yes but it would usually last longer and with uncerta
 
 
 ### Why GUI sections are divided and named Basic, JS, C?
-![nodonations](/media/nodonations2.png)
+![nodonations2](/media/nodonations2.png)
 
 
 [Back to Contents](#Contents)
@@ -536,6 +538,9 @@ Can this be done using AI? Yes but it would usually last longer and with uncerta
 Windows 10:
 - With default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. The same can happen wiht Ctrl+Alt+9 or 0. After several shortcut combinations tested Ctrl+Alt+J works well.
 - When items are selected with `Enter` in menu in editor sometimes `Enter` is written in editor itself so selection iz overwritten and new line is inserted. After Ctrl+Z `Undo` all works well.
+
+Mac:
+- After making selections and change window (i.e. open Safari) and them perform increments position of incremented lines is moved from where they should be. Sometimes this can happen even without changing application window. It appears that for some reason MacOS is messing with cursor position for Visual Studio Code.
 
 [Back to Contents](#Contents)
 
