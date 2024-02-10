@@ -5,6 +5,29 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.2.0] - 2024-02-10
+
+### Added
+- Along the existing hh:mm:ss new ISO time formats: hh:mm, mm:ss.
+- Along the existing YYYY-MM-DD New ISO date formats: YYYY-MM, MM-DD.
+- Leading zeros support for integer and floating point numbers.
+- New GUI button behavior for timeISO and dateISO.
+- Readme updated.
+- Public API updated with Terms of Use and Privacy Policy.
+
+### Fixed
+- Configuration vscode engine for compatiblity with previous versions of VSCode.
+- Script files for public repository.
+- Extension settings for packaging.
+- HTML infrastructure for GUI.
+- Text instead of HTML output to selections text section.
+- Hidden bug for time format increments.
+
+## Deprecated
+- In public MACf types timeISO and dateISO are replaced with YYYY-MM-DD, YYYY-MM, MM-DD, hh:mm:ss, hh:mm, mm:ss.
+- Public API Docs updated.
+
+
 
 ## [1.1.0] - 2024-02-06
 

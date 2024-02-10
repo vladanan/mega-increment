@@ -46,10 +46,10 @@ If you have found a `bug` or other issue or you have `feature request` please wr
 
 
 There are four simple commands which are used in editor:
-  - when some part of line is selected user can **add** it for incrementation (and then select type and stepping)
-  - start **incrementing** by adding lines below the line where the cursor is
-  - **delete** all selected parts for incrementation
-  - start **Advanced GUI** mode
+  1. when some part of line is selected user can **add** it for incrementation (and then select type and stepping)
+  2. start **incrementing** by adding lines below the line where the cursor is
+  3. **delete** all selected parts for incrementation after work is done to prevent overlapping selections and misplacement of new lines
+  4. start **Advanced GUI** mode
 
 All commands are available in VSCode standard Command Palette (Linux/Windows: Ctrl+Shift+P / F1, Mac: ⇧⌘P / F1).  
 ***Tip:*** *By typing '**mega**' in Command Palette you get all of them quickly.*
@@ -96,8 +96,9 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
 
     ![howitworks5](/media/howitworks5.png)
 
-6) To delete current selection(s) hit Ctrl+Alt+0 / ⇧ ⌘ 0.  
-  ***Tip:*** *You can also click on Status bar Clear all selections button: ![clear-all](/media/clear-all.png) .*
+6) If work is finished and you want to try new increment then delete current selection(s) and increments with Ctrl+Alt+0 / ⇧ ⌘ 0.  
+  ***Tip:*** *You can also click on Status bar Clear all selections button: ![clear-all](/media/clear-all.png) .*  
+  If you don't delete previous selections and increments and then move cursor or delete some of lines below or add new selections chances are that the result will not be correct or as expected.
 
     ![howitworks6](/media/howitworks6.png)
 
@@ -162,8 +163,8 @@ const alarms: Alarm[] = [
     { day: t('alarm.items.day.2024-01-15'), time: t('alarm.items.time.13:00:00') },
 ];
 ```
-- Select day part `2024-01-15`, add, choose `dateISO` type, input stepping 2
-- Select time part `13:00:00`, add, choose `timeISO` type, input stepping -600 (10min = 600sec)
+- Select day part `2024-01-15`, add, choose `YYYY-MM-DD` type, input stepping 2
+- Select time part `13:00:00`, add, choose `hh:mm:ss` type, input stepping -600 (10min = 600sec)
 - Hit increment several times and we get this:
 ```javascript
 const alarms: Alarm[] = [
@@ -179,11 +180,11 @@ const alarms: Alarm[] = [
 	{ day: t('alarm.items.day.2024-02-02'), time: t('alarm.items.time.11:30:00') },
 ];
 ```
-- For now `timeISO` is without milliseconds.
-+ **dateISO**: date part from ISO full date string
-+ **timeISO**: time part without millisecond from ISO full date string  
+- For now `time` formats are without milliseconds.
++ **YYYY-MM-DD**: date part from ISO full date string, `YYYY-MM` and `MM-DD` are also available.
++ **hh:mm:ss**: time part without millisecond from ISO full date string, `hh:mm` and `mm:ss` are also available.  
 ***Tip:*** *Date: If you want to increase only months then don't increase days by 30 because not all months have 30 days. Better select only month and increment by appropriate stepping.*  
-***Tip:*** *Time: To increase seconds input stepping: 1-59, for minutes stepping: min\*60, for hours stepping: hours\*3600.*
+***Tip:*** *To increase minutes and hours by seconds then multiply minutes with 60 and hours by 3600.*
 - If you use decimal stepping on date and time i.e. inputting stepping of 0.333333 they will be incremented every third time. If you input stepping of 0.25 increment will occur every fourth time, for 0.2 fifth and so on. This `fractional stepping` is available also for types: simple, integer numbers and enums.
 - **Some other date and time formats will soon be implemented in extension.**
 
@@ -388,7 +389,7 @@ switch (year.selectedMonth) {
 
 ![example-enums](/media/example-enums.png)
 
-- So what happened with color attribute? Enum ["light", "", "dark"] went normally with stepping 1, but enum ["blue", "salmon", "cyan","gray", "green"] because of stepping 0.333333 changed `only once every third time` so for each color we get three variants of different saturation (light, normal, dark). This kind of `fractional stepping` we can also do with integer numbers, dateISO, timeISO and simple. Try it yourself.
+- So what happened with color attribute? Enum ["light", "", "dark"] went normally with stepping 1, but enum ["blue", "salmon", "cyan","gray", "green"] because of stepping 0.333333 changed `only once every third time` so for each color we get three variants of different saturation (light, normal, dark). This kind of `fractional stepping` we can also do with integer numbers, date, time and simple. Try it yourself.
 
 Here are few already prepared enums which you may find useful during work and insert them in Mega Increment settings.
 + Key: week days, Value: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -448,7 +449,7 @@ Lets se how it looks on previous example with colors.
       + clipboard and
       + JSON array.
 
-  ![gui3](/media/gui3.png)
+  ![gui3](/media/gui4.png)
 
 Let's see that in motion:
 
