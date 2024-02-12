@@ -92,13 +92,14 @@ All commands are available in VSCode standard Command Palette (Linux/Windows: Ct
     In extension settings one can disable all notifications except for overlapping selection(s).
 
 5) Issue command for **increment** (Ctrl+Alt+U / ⌥ ⌘ U) 9 times and then below the active line new lines will appear with selected part incremented.  
-  ***Tip:*** *You can also click on Status bar INCR button.*
+  ***Tip:*** *You can also click on Status bar `Increments` button.*
 
     ![howitworks5](/media/howitworks5.png)
 
 6) If work is finished and you want to try new increment then delete current selection(s) and increments with Ctrl+Alt+0 / ⇧ ⌘ 0.  
   ***Tip:*** *You can also click on Status bar Clear all selections button: ![clear-all](/media/clear-all.png) .*  
-  If you don't delete previous selections and increments and then move cursor or delete some of lines below or add new selections chances are that the result will not be correct or as expected.
+  **If you didn't finish adding selections and accidentaly hit increment you need to delete all and start over.**  
+  **If you don't delete previous selections and increments and delete some of lines below or add new selections chances are that the result will not be as expected.**
 
     ![howitworks6](/media/howitworks6.png)
 
@@ -186,7 +187,7 @@ const alarms: Alarm[] = [
 ***Tip:*** *Date: If you want to increase only months then don't increase days by 30 because not all months have 30 days. Better select only month and increment by appropriate stepping.*  
 ***Tip:*** *To increase minutes and hours by seconds then multiply minutes with 60 and hours by 3600.*
 - If you use decimal stepping on date and time i.e. inputting stepping of 0.333333 they will be incremented every third time. If you input stepping of 0.25 increment will occur every fourth time, for 0.2 fifth and so on. This `fractional stepping` is available also for types: simple, integer numbers and enums.
-- **Some other date and time formats will soon be implemented in extension.**
+- **Some other date and time formats might be implemented in extension. If you need some of them please submit feature request at: https://github.com/vladanan/mega-increment/issues**
 
 [Back to Contents](#Contents)
 
@@ -481,7 +482,7 @@ Let's see that in motion:
 <h2 id="PublicAPI">Public API</h2>
 
 
-This project includes public API with same functions as extension. You can see the MACf API Documentation at: https://vezbamo.vercel.app/api/mi/pad or at [GitHub](https://github.com/vladanan/mega-increment/blob/master/PublicAPIDocs.md).
+This project includes public API with same functions as extension. You can see the MACf API Documentation at [GitHub](https://github.com/vladanan/mega-increment/blob/master/PublicAPIDocs.md).
 
 [Back to Contents](#Contents)
 
@@ -525,7 +526,8 @@ Can this be done using AI? Yes but it would usually last longer and with uncerta
 
 
 ### Why GUI sections are divided and named Basic, JS, C?
-![nodonations2](/media/nodonations2.png)
+Just for fun.
+
 
 
 [Back to Contents](#Contents)

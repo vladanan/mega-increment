@@ -5,6 +5,18 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+## [1.2.1] - 2024-02-12
+
+### Added
+- Editor: Moving cursor to different line continues increments at new location.
+
+### Fixed
+- Misplaced increments when cursor is at EOL.
+- UI messages and info for editor.
+- Readme typos and corrections.
+
+
+
 ## [1.2.0] - 2024-02-10
 
 ### Added
@@ -16,7 +28,7 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 - Public API updated with Terms of Use and Privacy Policy.
 
 ### Fixed
-- Configuration vscode engine for compatiblity with previous versions of VSCode.
+- Configuration vscode engine for compatibility with previous versions of VSCode.
 - Script files for public repository.
 - Extension settings for packaging.
 - HTML infrastructure for GUI.
