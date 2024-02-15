@@ -419,12 +419,12 @@ Lets se how it looks on previous example with colors.
   **Line text section:**
 
   2. Number of times the line text is incremented
-  3. Line text is automatically retrieved from editor
+  3. Line text is automatically retrieved from editor, **select some part of text and then click on type button below according to which you want increment to be made**
   4. Use Alt+8 to get focus on line text  
   *More information about Alt+8 and other web accesskeys in: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/accesskey*
   5. Line text can be retrieved back if changed or lost  
 
-  **Types section, buttons enable selecting type for selected text, available buttons depend on what kind of text is selected:**
+  **Types section, buttons enable choosing type for selected text, available button types depend on what kind of text is selected:**
 
   6. **Basic** forms of incrementing: simple which treats selected text as sweet of individual characters and number for integers and floating point numbers
   7. **JS** group for enums/lists, date and time

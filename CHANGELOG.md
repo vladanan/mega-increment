@@ -5,6 +5,20 @@ File is structured by following recommendations from [Keep a Changelog](http://k
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
+
+## [1.2.2] - 2024-02-15
+
+### Added
+- Verification of option sets through new API.
+
+### Fixed
+- Automatic textarea width.
+- GUI structure.
+- Readme corrections.
+- API 404 pages.
+
+
+
 ## [1.2.1] - 2024-02-12
 
 ### Added
