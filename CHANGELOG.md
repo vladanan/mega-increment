@@ -6,6 +6,14 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
 
+
+## [1.2.3] - 2024-02-17
+
+### Fixed
+- Workaround for porblem with failed api calls through Vercel.
+
+
+
 ## [1.2.2] - 2024-02-15
 
 ### Added
