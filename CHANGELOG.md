@@ -7,6 +7,14 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
 
+## [1.2.4] - 2024-03-19
+
+### Fixed
+- API calls responses.
+- Code optimisations, clean-up, styling.
+
+
+
 ## [1.2.3] - 2024-02-17
 
 ### Fixed
