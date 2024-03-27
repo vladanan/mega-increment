@@ -6,9 +6,16 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
 
+## [1.2.7] - 2024-03-27
+
+### Fixed
+- Banner size workaround for VSC markdown styling display.
+
+
+
 ## [1.2.6] - 2024-03-27
 
-### Added
+### Fixed
 - Banner size fix.
 
 
