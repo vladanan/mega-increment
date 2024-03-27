@@ -19,7 +19,7 @@ If you have found a `bug` or other issue or you have `feature request` please wr
 **If you want to `donate and support` further extension development**  
 you can do it via [PayPal](https://paypal.me/vladanandjelkovic)  
 or you can  
-<table><tr><td style="height: 60px !important;width: 60px !important;"></td><td><a href="https://www.buymeacoffee.com/vladanan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a></td></tr><table>
+<a href="https://www.buymeacoffee.com/vladanan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 33px !important;width: 130px !important;" ></a>
 
 <h2 id="Contents">Contents</h2>
 

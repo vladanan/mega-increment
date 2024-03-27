@@ -6,6 +6,13 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
 
+## [1.2.6] - 2024-03-27
+
+### Added
+- Banner size fix.
+
+
+
 ## [1.2.5] - 2024-03-27
 
 ### Added
