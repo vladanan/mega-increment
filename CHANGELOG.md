@@ -6,11 +6,17 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
 
+## [1.2.5] - 2024-03-27
+
+### Added
+- Readme.md update.
+
+
 
 ## [1.2.4] - 2024-03-19
 
 ### Fixed
-- API calls responses.
+- API call responses.
 - Code optimisations, clean-up, styling.
 
 

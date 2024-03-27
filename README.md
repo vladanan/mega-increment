@@ -16,9 +16,10 @@ There are also example videos on YouTube for [editor](https://youtu.be/75dgl6m22
 
 If you have found a `bug` or other issue or you have `feature request` please write here: https://github.com/vladanan/mega-increment/issues  
 
-**If you want to `donate and support` further development**: https://paypal.me/vladanandjelkovic  
-
-
+**If you want to `donate and support` further extension development**  
+you can do it via [PayPal](https://paypal.me/vladanandjelkovic)  
+or you can  
+<table><tr><td style="height: 60px !important;width: 60px !important;"></td><td><a href="https://www.buymeacoffee.com/vladanan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a></td></tr><table>
 
 <h2 id="Contents">Contents</h2>
 
