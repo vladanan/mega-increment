@@ -35,10 +35,10 @@ Beautified:
 
 Result from API:  
 
+Some sample text with number **201**.  
 Some sample text with number **202**.  
 Some sample text with number **203**.  
-Some sample text with number **204**.  
-Some sample text with number **205**.
+Some sample text with number **204**.
 
 - **Be careful when using `'` and `"` in curl API calls from (Linux/Mac) shell(s). Because of shell performing string concatenation on the command line and JSON format which depends on `""` you probably must:**
     + escape each `'` with `'\''` for shell concatenation

@@ -3,7 +3,7 @@
 Mega-increment extension is intended to ease parallel independent incrementations and decrementations in various strings. It can be used in writing code for lists, enums, arrays, tests, html and xml tags, csv files, data base examples and tests, date-time iterations, hexadecimal and binary register allocations and many other uses.
 
 - `Basic` functionality is available in the **editor** tabs and `advanced options` are implemented in a separate **GUI** tab.
-- **Editor** supports only `single line mode` (and cursor has `to stay on line` from which commands are called).
+- **Editor** supports `double line mode` (cursor does not need `to stay on line` from which commands are called).
 - **GUI** supports `multiline`, changing line, `interactivity`, `exports` and other advanced options.
 
 - Editor:
@@ -540,11 +540,14 @@ Just for fun.
 
 
 Windows 10:
-- With default shortcut for add selection Ctrl+Alt+8 an apostrophe is written and selected text is deleted. The same can happen wiht Ctrl+Alt+9 or 0. After several shortcut combinations tested Ctrl+Alt+J works well.
-- When items are selected with `Enter` in menu in editor sometimes `Enter` is written in editor itself so selection iz overwritten and new line is inserted. After Ctrl+Z `Undo` all works well.
+
+- When using the default shortcut `Ctrl+Alt+8` to add a selection, an apostrophe is inserted and the selected text is deleted. Similar behavior may occur with `Ctrl+Alt+9` or `Ctrl+Alt+0`. After testing several combinations, `Ctrl+Alt+J` was found to work reliably.
+- When selecting items using `Enter` from a menu in the editor, sometimes the `Enter` key is also inserted into the editor, overwriting the selection and inserting a new line. Pressing `Ctrl+Z` (Undo) resolves the issue.
 
 Mac:
-- After making selections and change window (i.e. open Safari) and them perform increments position of incremented lines is moved from where they should be. Sometimes this can happen even without changing application window. It appears that for some reason MacOS is messing with cursor position for Visual Studio Code.
+
+- After making selections and switching windows (e.g., opening Safari), performing an increment can cause the position of incremented lines to shift unexpectedly. This can sometimes happen even without switching applications. It seems that macOS may interfere with the cursor position in Visual Studio Code.
+
 
 [Back to Contents](#Contents)
 

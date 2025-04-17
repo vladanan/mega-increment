@@ -6,6 +6,13 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
 
+## [1.2.8] - 2025-04-17
+
+### Fixed
+- Errors in PublicAPIDocs and README.md.
+
+
+
 ## [1.2.7] - 2024-03-27
 
 ### Fixed
@@ -38,7 +45,7 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 ## [1.2.3] - 2024-02-17
 
 ### Fixed
-- Workaround for porblem with failed api calls through Vercel.
+- Workaround for problem with failed api calls through Vercel.
 
 
 
