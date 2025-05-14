@@ -14,11 +14,11 @@
 
 In string `Some sample text with number 200.` number **200** is incremented with **1**.
 
-    curl -X POST -H 'accept: text/html' 'https://vezbamo.vercel.app/api/mi/v1' -d 'data={"lineText":"Some sample text with number 200.","incr":"5","parts":[{"selectionType":"number","timeStamp":"2024-01-18T23:34:18.293Z","stepping":1,"indexOf":29,"partText":"200"}]}'
+    curl -X POST -H 'accept: text/html' 'https://vezbamo3.vercel.app/api/mi/v1' -d 'data={"lineText":"Some sample text with number 200.","incr":"5","parts":[{"selectionType":"number","timeStamp":"2024-01-18T23:34:18.293Z","stepping":1,"indexOf":29,"partText":"200"}]}'
 
 Beautified:
 
-    curl -X POST -H 'accept: text/html' 'https://vezbamo.vercel.app/api/mi/v1' -d 'data=
+    curl -X POST -H 'accept: text/html' 'https://vezbamo3.vercel.app/api/mi/v1' -d 'data=
     {
         "lineText": "Some sample text with number 200.",
         "incr": "5",
@@ -51,11 +51,11 @@ Some sample text with number **204**.
 
 In string `Some sample text with number 200.` number **200** is **incremented with -3** i.e. **decremented with 3**.
 
-    https://vezbamo.vercel.app/api/mi/v1?data={"lineText":"Some sample text with number 200.","incr":"5","parts":[{"selectionType":"number","timeStamp":"2024-01-18T23:34:18.293Z","stepping":-3,"indexOf":29,"partText":"200"}]}
+    https://vezbamo3.vercel.app/api/mi/v1?data={"lineText":"Some sample text with number 200.","incr":"5","parts":[{"selectionType":"number","timeStamp":"2024-01-18T23:34:18.293Z","stepping":-3,"indexOf":29,"partText":"200"}]}
 
 Beautified:
 
-    https://vezbamo.vercel.app/api/mi/v1?data=
+    https://vezbamo3.vercel.app/api/mi/v1?data=
     {
         "lineText": "Some sample text with number 200.",
         "incr": "5",
@@ -88,11 +88,11 @@ Some sample text with number **185**.
 
 In string `Some sample text with abc, number 200 and enum for color red.` part **abc** is incremented with +1 for each separate character, number **200** is incremented with -3 (i.e. decremented by 3), enum **red** for colors is incremented by +1. Incrementation is performed 9 times.
 
-    curl -X POST -H 'accept: text/html' 'https://vezbamo.vercel.app/api/mi/v1' -d 'data={"lineText": "Some sample text with abc, number 200 and enum for color red.","incr": "9","parts": [{"selectionType": "simple","timeStamp": "2024-01-18T23:43:45.430Z","stepping": 1,"indexOf": 22,"partText": "abc"},{"selectionType": "number","timeStamp": "2024-01-18T23:43:52.537Z","stepping": "-3","indexOf": 34,"partText": "200"},{"selectionType": "enum","enumArray": ["red","green","blue","cyan","magenta","yellow","black"],"enumVariant": "continuous","timeStamp": "2024-01-18T23:44:03.992Z","stepping": 1,"indexOf": 57,"partText": "red"}]}'
+    curl -X POST -H 'accept: text/html' 'https://vezbamo3.vercel.app/api/mi/v1' -d 'data={"lineText": "Some sample text with abc, number 200 and enum for color red.","incr": "9","parts": [{"selectionType": "simple","timeStamp": "2024-01-18T23:43:45.430Z","stepping": 1,"indexOf": 22,"partText": "abc"},{"selectionType": "number","timeStamp": "2024-01-18T23:43:52.537Z","stepping": "-3","indexOf": 34,"partText": "200"},{"selectionType": "enum","enumArray": ["red","green","blue","cyan","magenta","yellow","black"],"enumVariant": "continuous","timeStamp": "2024-01-18T23:44:03.992Z","stepping": 1,"indexOf": 57,"partText": "red"}]}'
 
 Beautified:
 
-    curl -X POST -H 'accept: text/html' 'https://vezbamo.vercel.app/api/mi/v1' -d 'data=
+    curl -X POST -H 'accept: text/html' 'https://vezbamo3.vercel.app/api/mi/v1' -d 'data=
     {
     "lineText": "Some sample text with abc, number 200 and enum for color red.",
     "incr": "9",
@@ -148,11 +148,11 @@ Some sample text with **jkl**, number **173** and enum for color **blue**.
 ## Part object examples for date, time, hex, binary, random, crypto:
 *Hex and binary are only tested for positive numbers.*
 
-    https://vezbamo.vercel.app/api/mi/v1?data={"lineText":"Sample 2024-01-21 22:59:33 abc 1101 anything 7593401834823851","incr":"12","parts":[{"selectionType":"YYYY-MM-DD","timeStamp":"2024-01-21T22:07:07.434Z","stepping":3,"indexOf":7,"partText":"2024-01-21"},{"selectionType":"hh:mm:ss","timeStamp":"2024-01-21T22:07:10.254Z","stepping":3,"indexOf":18,"partText":"22:59:33"},{"selectionType":"hex","timeStamp":"2024-01-21T22:07:14.600Z","stepping":3,"indexOf":27,"partText":"abc"},{"selectionType":"binary","timeStamp":"2024-01-21T22:07:18.951Z","stepping":3,"indexOf":31,"partText":"1101"},{"selectionType":"random","timeStamp":"2024-01-21T22:07:21.803Z","stepping":0,"indexOf":36,"partText":"anything"},{"selectionType":"crypto","timeStamp":"2024-01-21T22:07:56.657Z","stepping":0,"indexOf":45,"partText":"7593401834823851"}]}
+    https://vezbamo3.vercel.app/api/mi/v1?data={"lineText":"Sample 2024-01-21 22:59:33 abc 1101 anything 7593401834823851","incr":"12","parts":[{"selectionType":"YYYY-MM-DD","timeStamp":"2024-01-21T22:07:07.434Z","stepping":3,"indexOf":7,"partText":"2024-01-21"},{"selectionType":"hh:mm:ss","timeStamp":"2024-01-21T22:07:10.254Z","stepping":3,"indexOf":18,"partText":"22:59:33"},{"selectionType":"hex","timeStamp":"2024-01-21T22:07:14.600Z","stepping":3,"indexOf":27,"partText":"abc"},{"selectionType":"binary","timeStamp":"2024-01-21T22:07:18.951Z","stepping":3,"indexOf":31,"partText":"1101"},{"selectionType":"random","timeStamp":"2024-01-21T22:07:21.803Z","stepping":0,"indexOf":36,"partText":"anything"},{"selectionType":"crypto","timeStamp":"2024-01-21T22:07:56.657Z","stepping":0,"indexOf":45,"partText":"7593401834823851"}]}
 
 Beautified:  
 
-    https://vezbamo.vercel.app/api/mi/v1?data=
+    https://vezbamo3.vercel.app/api/mi/v1?data=
     {
         "lineText": "Sample 2024-01-21 22:59:33 abc 1101 anything 7593401834823851",
         "incr": "12",

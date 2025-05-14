@@ -6,6 +6,13 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 
 
 
+## [1.2.9] - 2025-05-14
+
+### Fixed
+- Wrong url for apis after repo and deploy change from vezbamo.vercel.app to vezbamo4.vercel.app.
+
+
+
 ## [1.2.8] - 2025-04-17
 
 ### Fixed
