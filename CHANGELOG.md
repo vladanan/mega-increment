@@ -7,7 +7,7 @@ Extension versions follow [Semantic Versioning](https://semver.org/).
 ## [1.2.9] - 2025-05-14
 
 ### Fixed
-- Wrong url for homepage fixed. Now it is https://a-apis.com/developers.
+- Wrong url for homepage fixed. Now homapage is https://a-apis.com/developers.
 
 
 
