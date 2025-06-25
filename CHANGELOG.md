@@ -4,6 +4,11 @@ All notable changes to the "mega-increment" extension will be documented in this
 File is structured by following recommendations from [Keep a Changelog](http://keepachangelog.com/).  
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
+## [1.2.9] - 2025-05-14
+
+### Fixed
+- Wrong url for homepage fixed. Now it is https://a-apis.com/developers.
+
 
 
 ## [1.2.9] - 2025-05-14
