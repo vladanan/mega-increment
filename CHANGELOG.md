@@ -4,17 +4,24 @@ All notable changes to the "mega-increment" extension will be documented in this
 File is structured by following recommendations from [Keep a Changelog](http://keepachangelog.com/).  
 Extension versions follow [Semantic Versioning](https://semver.org/).
 
+
+## [1.2.11] - 2025-08-10
+
+### Fixed
+- Old url for API in GUI version.
+
+
+## [1.2.10] - 2025-06-25
+
+### Fixed
+- Old url for homepage fixed. Now homapage is https://a-apis.com/developers.
+
+
+
 ## [1.2.9] - 2025-05-14
 
 ### Fixed
-- Wrong url for homepage fixed. Now homapage is https://a-apis.com/developers.
-
-
-
-## [1.2.9] - 2025-05-14
-
-### Fixed
-- Wrong url for apis after repo and deploy change from vezbamo.vercel.app to vezbamo4.vercel.app.
+- Old url for apis after repo and deploy change from vezbamo.vercel.app to vezbamo4.vercel.app.
 
 
 
